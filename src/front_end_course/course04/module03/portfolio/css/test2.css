@@ -1,0 +1,21 @@
+/* remove these styles */
+.primary {
+    text-align: center;
+    font-size: 1.5rem;
+    background-color: #4caf50;
+    margin-bottom: 1rem;
+}
+
+.secondary {
+    text-align: center;
+    font-size: 1.5rem;
+    background-color: #8d6e63;
+    margin-bottom: 1rem;
+}
+
+.accent {
+    text-align: center;
+    font-size: 1.5rem;
+    background-color: #f5f5dc;
+    margin-bottom: 1rem;
+}

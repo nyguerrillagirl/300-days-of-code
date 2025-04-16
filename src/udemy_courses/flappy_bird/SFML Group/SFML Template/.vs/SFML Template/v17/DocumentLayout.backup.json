@@ -1,0 +1,71 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\100DaysOfCode\\100-days-of-code\\src\\udemy_courses\\flappy_bird\\SFML Group\\SFML Template\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{F2C859D1-1DF3-402B-B3A3-BE441BCDCD39}|SFML Template.vcxproj|C:\\100DaysOfCode\\100-days-of-code\\src\\udemy_courses\\flappy_bird\\SFML Group\\SFML Template\\main.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{F2C859D1-1DF3-402B-B3A3-BE441BCDCD39}|SFML Template.vcxproj|solutionrelative:main.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F2C859D1-1DF3-402B-B3A3-BE441BCDCD39}|SFML Template.vcxproj|C:\\100DaysOfCode\\100-days-of-code\\src\\udemy_courses\\flappy_bird\\SFML Group\\SFML Template\\StateMachine.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{F2C859D1-1DF3-402B-B3A3-BE441BCDCD39}|SFML Template.vcxproj|solutionrelative:StateMachine.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F2C859D1-1DF3-402B-B3A3-BE441BCDCD39}|SFML Template.vcxproj|C:\\100DaysOfCode\\100-days-of-code\\src\\udemy_courses\\flappy_bird\\SFML Group\\SFML Template\\StateMachine.hpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{F2C859D1-1DF3-402B-B3A3-BE441BCDCD39}|SFML Template.vcxproj|solutionrelative:StateMachine.hpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "main.cpp",
+              "DocumentMoniker": "C:\\100DaysOfCode\\100-days-of-code\\src\\udemy_courses\\flappy_bird\\SFML Group\\SFML Template\\main.cpp",
+              "RelativeDocumentMoniker": "main.cpp",
+              "ToolTip": "C:\\100DaysOfCode\\100-days-of-code\\src\\udemy_courses\\flappy_bird\\SFML Group\\SFML Template\\main.cpp",
+              "RelativeToolTip": "main.cpp",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2025-03-31T08:06:39Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "StateMachine.hpp",
+              "DocumentMoniker": "C:\\100DaysOfCode\\100-days-of-code\\src\\udemy_courses\\flappy_bird\\SFML Group\\SFML Template\\StateMachine.hpp",
+              "RelativeDocumentMoniker": "StateMachine.hpp",
+              "ToolTip": "C:\\100DaysOfCode\\100-days-of-code\\src\\udemy_courses\\flappy_bird\\SFML Group\\SFML Template\\StateMachine.hpp",
+              "RelativeToolTip": "StateMachine.hpp",
+              "ViewState": "AgIAABMAAAAAAAAAAAAxwCAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2025-03-31T07:51:17.971Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "StateMachine.cpp",
+              "DocumentMoniker": "C:\\100DaysOfCode\\100-days-of-code\\src\\udemy_courses\\flappy_bird\\SFML Group\\SFML Template\\StateMachine.cpp",
+              "RelativeDocumentMoniker": "StateMachine.cpp",
+              "ToolTip": "C:\\100DaysOfCode\\100-days-of-code\\src\\udemy_courses\\flappy_bird\\SFML Group\\SFML Template\\StateMachine.cpp",
+              "RelativeToolTip": "StateMachine.cpp",
+              "ViewState": "AgIAAB8AAAAAAAAAAAAxwCoAAAAcAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2025-03-31T07:50:58.897Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

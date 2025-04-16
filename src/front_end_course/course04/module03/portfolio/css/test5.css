@@ -1,0 +1,10 @@
+p {
+    color: white;
+    background-image: url("../images/landscaping03.jpg");
+    font-weight: 800;
+    width: 1024px;
+    height: 683px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    opacity: 0.5;
+}

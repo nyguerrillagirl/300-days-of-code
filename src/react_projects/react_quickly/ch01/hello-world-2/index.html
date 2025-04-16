@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hello World - with React</title>
+    <script src="https://unpkg.com/react@18/umd/react.development.js"></script>
+    <script src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
+</head>
+<body>
+    <div id="root"></div>
+    <script>
+        // Create an h1 React elemeent 
+        const reactElement = React.createElement('h1', {style: {color: 'red'}}, 'Hello World');
+        // Grabs a reference to the DOM element on the page 
+        const domNode = document.getElementById('root');
+        // Creates a root holder for the React application connected to the DOM element
+        const root = ReactDOM.createRoot(domNode);
+        // Renders the h1 element into the root holder
+        root.render(reactElement);
+    </script>
+</body>
+</html>

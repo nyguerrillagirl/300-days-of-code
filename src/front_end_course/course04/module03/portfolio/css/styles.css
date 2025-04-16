@@ -1,0 +1,200 @@
+/* shrub color: #26877F Primary Color*/
+/* Mint Green #C8E6C9 Backgrounds/Sections */
+/* White #FFFFFF Text/Accemts */
+/* Lemon Lime #DCE775 Buttons/Highlights */
+/* Dark Green #33691E Headers/Borders */
+/* Light Blue #E1F5FE Backgrounds/Dividers */
+
+body {
+    background-color: #DCE775;
+    font-family: 'Markazi Text', serif;
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+    margin-left: 5%;
+    margin-right: 5%;
+}
+
+h1 {
+    font-size: 2.5rem;
+    color: #333;
+    text-align: center;
+    margin-bottom: 1rem;
+}
+.coupon {
+    border: 5px dotted #bbb; /* Dotted border */
+    width: 80%;
+    border-radius: 15px; /* Rounded border */
+    margin: 0 auto; /* Center the coupon */
+    max-width: 600px;
+    /* forest_animated01 */
+    background-image: url('../images/landscaping03.jpg');
+}
+
+.promotion {
+     margin: -25px auto;
+     /* border: solid 5px #26877F; */
+}
+.promotion_text {
+    font-size: 2rem;
+    font-weight: 600;
+    color: white; /* #333 */
+    text-align: center;
+    /*margin-bottom: 1rem;*/
+    margin: 0.5rem auto; 
+}
+
+.large {
+    font-size: 2rem;
+}
+
+h2 {
+    font-size: 2rem;
+    color: #333;
+    margin-bottom: 1rem;
+}
+
+header > img {
+    display: block;
+    margin-left: auto;
+    margin-right:auto;
+    margin-bottom: 20px;
+    margin-top: -30px;
+    /*border: 1px solid #333; */
+}
+
+/* Center the navigation bar */
+nav {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    background-color: #26877F; /* Primary color for the navbar background */
+    padding: 10px;
+    width: fit-content; 
+    margin: 5px auto;
+    border-radius: 15px;
+  }
+  
+  /* Remove default list styling */
+  nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 5px auto;
+    display: flex;
+    justify-content: center;
+  }
+  
+  /* Style each list item */
+  nav ul li {
+    margin: 0 15px; /* Adjust margin as needed */
+  }
+/* Style the links */
+nav ul li a {
+    text-decoration: none;
+    color: #FFFFFF; /* White color for the links */
+    font-size: 22px;
+    padding: 5px 10px;
+  }
+  
+/* Add hover effect */
+ nav ul li a:hover {
+    background-color: #DCE775; /* Dark Green for the hover effect */
+    color: #000000; /* Keep text white */
+    border-radius: 5px;
+}
+
+
+
+.services {
+    display: grid;
+    gap: 10px; 
+    grid-template-columns: repeat(3, 1fr);
+    place-items: center;
+    text-align: center;
+    /*border: 1px solid #333; */
+    margin: 50px auto;
+}
+   /* Change to 2 columns on medium screens */
+   @media (max-width: 768px) {
+    .services {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+/* Change to 1 column on small screens */
+@media (max-width: 480px) {
+  .services {
+      grid-template-columns: 1fr;
+    }
+}
+
+article {
+    flex: 1;
+}
+
+footer {
+    display: flex;
+    /*border: 1px solid #333;*/
+    justify-content: center; /* centers horizontally */
+    align-items: center; /* centers vertically */
+}
+
+footer div {
+    flex: 1;
+}
+
+.footer_text {
+    text-align: right;
+    font-size: 1.5rem;
+    color: #333;
+    align-items: right;
+    margin-bottom: 1rem;
+}
+
+.card {
+    /* Add shadows to create the "card" effect */
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;  
+    border-radius: 15px;
+   width: 100%;
+   height: 100%;
+}
+
+/* On mouse-over, add a deeper shadow */
+.card:hover {
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+  }
+  
+  /* Add some padding inside the card container */
+  .container {
+    padding: 2px 16px;
+    display: flex-column;
+    align-items: center;
+    align-content: center;
+  }
+
+
+
+  .service_text {
+    font-size: 2.5rem;
+    font-weight: 600;
+    color: #333;
+    text-align: center;
+    margin-bottom: 1rem;
+  }
+
+  .service_description {
+    font-size: 1.5rem;
+    color: #333;
+    text-align: center;
+    font-weight: 400;
+    margin-bottom: 1rem;
+    padding: 0 1rem;
+  }
+
+.copyright_hr {
+    border: 1px solid #333;
+
+}
+.copyright_text p {
+  text-align: right;
+  float: right;
+}
