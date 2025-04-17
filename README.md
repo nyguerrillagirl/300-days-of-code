@@ -17,7 +17,7 @@ The goal is to stay more focused on the things I am working on.
 # Goal #4: Full Stack Development
 - Spring
 
-#Goal #5: Book Club
+# Goal #5: Book Club
 - Tech Reading
 - Non-tech Reading
 
