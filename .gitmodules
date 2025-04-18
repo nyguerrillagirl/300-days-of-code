@@ -1,0 +1,6 @@
+[submodule "src/leetcode/leetcode_java"]
+	path = src/leetcode/leetcode_java
+	url = https://github.com/nyguerrillagirl/leetcode_java.git
+[submodule "src/leetcode/leetcode_python"]
+	path = src/leetcode/leetcode_python
+	url = https://github.com/nyguerrillagirl/leetcode_python.git

@@ -1,13 +1,23 @@
-#include <iostream>
-#include "SDL.h"
-
-using namespace std;
+#include "Engine.h"
 
 int main(int argc, char** argv)
 {
-    if (SDL_Init(SDL_INIT_EVERYTHING) == 0) {
-        cout << "SDL_Init worked!" << endl;
+    Engine::GetInstance()->Init();
+
+
+    while (Engine::GetInstance()->isRunning()) {
+        // Get all current events (e.g. mouse clicks, etc.)
+        Engine::GetInstance()->Events();
+
+        // Update all objects/entities
+        Engine::GetInstance()->Update();
+
+        // Render/update the game graphics
+        Engine::GetInstance()->Render();
     }
-    SDL_Quit(); // clean up resources
+
+    // Clean everything up
+    Engine::GetInstance()->Clean();
+
     return 0;
 }
