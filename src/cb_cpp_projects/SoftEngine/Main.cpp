@@ -1,8 +1,11 @@
 #include "Engine.h"
+#include <iostream>
 
 int main(int argc, char** argv)
 {
-    Engine::GetInstance()->Init();
+    if (!Engine::GetInstance()->Init()) {
+        std::cout << "Initialization of Engine failed." << std::endl;
+    }
 
 
     while (Engine::GetInstance()->isRunning()) {

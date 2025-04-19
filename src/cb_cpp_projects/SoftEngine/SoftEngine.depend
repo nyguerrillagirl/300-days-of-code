@@ -1,10 +1,13 @@
 # depslib dependency file v1.0
-1744942586 source:c:\300-days-of-code\src\cb_cpp_projects\softengine\main.cpp
+1745000887 source:c:\300-days-of-code\src\cb_cpp_projects\softengine\main.cpp
 	"Engine.h"
+	<iostream>
 
-1744942829 c:\300-days-of-code\src\cb_cpp_projects\softengine\src\core\engine.h
+1744978228 c:\300-days-of-code\src\cb_cpp_projects\softengine\src\core\engine.h
+	"SDL.h"
+	"SDL_image.h"
 
-1744932774 source:c:\300-days-of-code\src\cb_cpp_projects\softengine\src\core\engine.cpp
+1745000932 source:c:\300-days-of-code\src\cb_cpp_projects\softengine\src\core\engine.cpp
 	"Engine.h"
 	<iostream>
 
