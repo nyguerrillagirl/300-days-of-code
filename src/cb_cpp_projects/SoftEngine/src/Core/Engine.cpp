@@ -51,7 +51,13 @@ void Engine::Update()
 
 void Engine::Render()
 {
+    // Set the draw color
     SDL_SetRenderDrawColor(m_Renderer, 124, 218, 254, 255);
+
+    // Clear the screen with the draw color
+    SDL_RenderClear(m_Renderer);
+
+    // Present the renderer (update the window)
     SDL_RenderPresent(m_Renderer);
 }
 
