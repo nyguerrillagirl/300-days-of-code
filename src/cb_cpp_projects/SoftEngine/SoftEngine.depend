@@ -7,7 +7,17 @@
 	"SDL.h"
 	"SDL_image.h"
 
-1745081126 source:c:\300-days-of-code\src\cb_cpp_projects\softengine\src\core\engine.cpp
+1745157070 source:c:\300-days-of-code\src\cb_cpp_projects\softengine\src\core\engine.cpp
 	"Engine.h"
+	"TextureManager.h"
 	<iostream>
+
+1745156897 c:\300-days-of-code\src\cb_cpp_projects\softengine\src\graphics\texturemanager.h
+	<string>
+	<map>
+	"SDL.h"
+
+1745156917 source:c:\300-days-of-code\src\cb_cpp_projects\softengine\src\graphics\texturemanager.cpp
+	"TextureManager.h"
+	"Engine.h"
 
