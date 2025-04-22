@@ -1,5 +1,6 @@
 #include "Engine.h"
 #include "TextureManager.h"
+#include "Transform.h"
 
 #include <iostream>
 
@@ -27,6 +28,9 @@ bool Engine::Init()
 
     TextureManager::GetInstance()->Load("tree", "assets/tree.png");
 
+    Transform tf;
+    tf.Log();
+
     return m_IsRunning = true;
 }
 
@@ -52,7 +56,6 @@ void Engine::Quit()
 
 void Engine::Update()
 {
-    SDL_Log("Updating in the Game Loop...");
 }
 
 void Engine::Render()
