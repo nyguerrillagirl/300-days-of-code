@@ -4,3 +4,6 @@
 [submodule "src/leetcode/leetcode_python"]
 	path = src/leetcode/leetcode_python
 	url = https://github.com/nyguerrillagirl/leetcode_python.git
+[submodule "src/html_projects/outrun"]
+	path = src/html_projects/outrun
+	url = https://github.com/nyguerrillagirl/outrun.git

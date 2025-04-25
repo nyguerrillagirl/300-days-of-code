@@ -36,3 +36,46 @@
     transform: rotate(360deg);
   }
 }
+
+.deleteButton {
+  background-color: red;
+  color: white;
+  border: none;
+  margin: 20px;
+  padding: 10px;
+  cursor: pointer;
+}
+
+.Overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.6);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.Alert {
+  position: fixed;
+  top: 5%;
+  left: 25%; 
+  /*display: flex; */
+  z-index: 9999;
+  background-color: #fefefe;
+  margin: 15% auto; /* 15% from the top and centered */
+  color:black;
+  padding: 20px;
+  border: 1px solid #888;
+  border-radius: 20px; /* Softly rounded corners */
+
+
+}
+
+h4 {
+  color: black;
+  margin-top: -10px;
+}
+
