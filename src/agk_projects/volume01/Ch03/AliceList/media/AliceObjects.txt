@@ -1,0 +1,10 @@
+1|Bow tie. Yellow with spots|1.00|0.5
+2|Cake. WIth raisins and currants|1.00|1.0
+3|Cat. Cheshire cat that can disappear|55.00|3.00
+4|Crown. The red queen’s crown|100.0|10.0
+5|Cup and Saucer. Best china|8.00|0.7
+6|Dodo. Last living Dodo bird|500.00|5.00
+7|Scroll. Magic spell|200.00|0.5
+8|Teapot. Filled with tea|12.0|1.0
+9|Top Hat. Belongs to hatter|5.00|1.0
+10|White Rabbit. Queen’s servant|50.00|20.0

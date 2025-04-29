@@ -1,0 +1,4 @@
+Face.jpg:0:0:486:576
+Dandelion.jpg:0:576:400:379
+Birds.jpg:486:0:600:239
+Robin.jpg:486:239:330:432
