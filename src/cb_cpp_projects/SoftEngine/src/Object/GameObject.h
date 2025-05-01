@@ -3,6 +3,7 @@
 
 #include "IObject.h"
 #include "Transform.h"
+#include "SDL.h"
 
 struct Properties {
 
