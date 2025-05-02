@@ -7,7 +7,7 @@ Warrior::Warrior(Properties* props): Character(props)
 {
     m_Row = 0;
     m_FrameCount = 6;
-    m_AnimSpeed = 50;
+    m_AnimSpeed = 80;
 }
 
 void Warrior::Draw()

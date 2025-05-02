@@ -9,9 +9,9 @@ class Warrior : public Character
     public:
         Warrior(Properties* props);
 
-        void Draw();
-        void Update(float dt);
-        void Clean();
+        virtual void Draw();
+        virtual void Update(float dt);
+        virtual void Clean();
 
 
     private:

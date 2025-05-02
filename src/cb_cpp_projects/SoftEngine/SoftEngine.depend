@@ -7,10 +7,11 @@
 	"SDL.h"
 	"SDL_image.h"
 
-1745939591 source:c:\300-days-of-code\src\cb_cpp_projects\softengine\src\core\engine.cpp
+1746057507 source:c:\300-days-of-code\src\cb_cpp_projects\softengine\src\core\engine.cpp
 	"Engine.h"
 	"TextureManager.h"
 	"Transform.h"
+	"Warrior.h"
 	<iostream>
 
 1746036150 c:\300-days-of-code\src\cb_cpp_projects\softengine\src\graphics\texturemanager.h
@@ -33,7 +34,7 @@
 	"SDL.h"
 	"TextureManager.h"
 
-1746057905 c:\300-days-of-code\src\cb_cpp_projects\softengine\src\characters\warrior.h
+1746083059 c:\300-days-of-code\src\cb_cpp_projects\softengine\src\characters\warrior.h
 	<Character.h>
 
 1746056240 c:\300-days-of-code\src\cb_cpp_projects\softengine\src\characters\character.h
