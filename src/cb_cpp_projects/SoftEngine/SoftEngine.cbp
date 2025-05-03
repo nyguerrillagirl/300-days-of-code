@@ -18,6 +18,7 @@
 					<Add directory="src/Physics" />
 					<Add directory="src/Object" />
 					<Add directory="src/Characters" />
+					<Add directory="src/Animation" />
 				</Compiler>
 			</Target>
 			<Target title="Release">
@@ -32,6 +33,7 @@
 					<Add directory="src/Physics" />
 					<Add directory="src/Object" />
 					<Add directory="src/Characters" />
+					<Add directory="src/Animation" />
 				</Compiler>
 				<Linker>
 					<Add option="-s" />
@@ -43,6 +45,8 @@
 			<Add option="-fexceptions" />
 		</Compiler>
 		<Unit filename="Main.cpp" />
+		<Unit filename="src/Animation/Animation.cpp" />
+		<Unit filename="src/Animation/Animation.h" />
 		<Unit filename="src/Characters/Character.h" />
 		<Unit filename="src/Characters/Warrior.cpp" />
 		<Unit filename="src/Characters/Warrior.h" />
