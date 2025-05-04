@@ -1,0 +1,5 @@
+# depslib dependency file v1.0
+1746295796 source:c:\300-days-of-code\src\cb_cpp_projects\physics_example\main.cpp
+	<SDL.h>
+	<iostream>
+
