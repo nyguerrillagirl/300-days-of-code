@@ -2,8 +2,8 @@
 // Created: 2017-02-11
 
 //*** Include library files ***
-#include "../Function Library/CoreLibrary.agc"
-#include "../Function Library/ListLibrary.agc"
+#include "../../Function Library/CoreLibrary.agc"
+#include "../../Function Library/SpriteLineLibrary.agc"
 
 type DataType 
 	key 	as integer //ID of item 

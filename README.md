@@ -13,7 +13,13 @@ The goal is to stay more focused on the things I am working on.
 - Datacamp courses
 
 # Goal #3: Project - Creating a Car Racing Video Game
-
+- Informal Approach/Learning
+    - Following youtube tutorial: https://www.youtube.com/playlist?list=PL-K0viiuJ2RctP5nlJlqmHGeh66-GOZR_
+        - Code in src/cb_cpp_projects/SoftEngine as I follow the series
+    - [Pikuma Courses](https://pikuma.com/)
+        - 2D Game Engine with C++ and Lua
+        - 2D Game Physics Engine Programming
+    - [AppGameKit](see: https://www.appgamekit.com/)
 # Goal #4: Full Stack Development
 - Spring
 
