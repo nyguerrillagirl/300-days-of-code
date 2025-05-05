@@ -15,7 +15,7 @@ class Transform
             std::cout << msg << "(X,Y)= (" << X << " " << Y << ")" << std::endl;
        }
 
-    private:
+    public:
         // Move in the X-axis direction
         inline void TranslateX(float x) { X += x; }
 

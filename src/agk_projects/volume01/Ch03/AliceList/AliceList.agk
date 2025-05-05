@@ -1,6 +1,7 @@
 
 [apk_settings]
 alias=
+app_new_icon_path=
 app_icon_path=
 notif_icon_path=
 app_name=
@@ -51,6 +52,7 @@ output_path=E:/AGKStudio/The Official AppGameKit Studio Tutorial Guide Vol 1/Res
 FILE_0=main.agc;-1
 
 [files]
+FILE_NAME_0=1;main.agc;4;0
 
 [project]
 description=

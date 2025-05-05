@@ -26,7 +26,7 @@
 1745282383 c:\300-days-of-code\src\cb_cpp_projects\softengine\src\physics\vector2d.h
 	<iostream>
 
-1745282042 c:\300-days-of-code\src\cb_cpp_projects\softengine\src\physics\transform.h
+1746361763 c:\300-days-of-code\src\cb_cpp_projects\softengine\src\physics\transform.h
 	"Vector2D.h"
 
 1746197615 source:c:\300-days-of-code\src\cb_cpp_projects\softengine\src\characters\warrior.cpp
@@ -34,9 +34,10 @@
 	"SDL.h"
 	"TextureManager.h"
 
-1746194251 c:\300-days-of-code\src\cb_cpp_projects\softengine\src\characters\warrior.h
-	<Character.h>
-	<Animation.h>
+1746361062 c:\300-days-of-code\src\cb_cpp_projects\softengine\src\characters\warrior.h
+	"Character.h"
+	"Animation.h"
+	"RigidBody.h"
 
 1746056240 c:\300-days-of-code\src\cb_cpp_projects\softengine\src\characters\character.h
 	<GameObject.h>
@@ -53,8 +54,10 @@
 	<string>
 	"SDL.h"
 
-1746197526 source:c:\300-days-of-code\src\cb_cpp_projects\softengine\src\animation\animation.cpp
+1746198407 source:c:\300-days-of-code\src\cb_cpp_projects\softengine\src\animation\animation.cpp
 	"Animation.h"
 	"TextureManager.h"
-	<iostream>
+
+1746361163 c:\300-days-of-code\src\cb_cpp_projects\softengine\src\physics\rigidbody.h
+	"Vector2D.h"
 

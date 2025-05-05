@@ -1,0 +1,15 @@
+uniform sampler2D texture0;
+varying vec2 uvVarying;
+
+uniform vec4 MyOwnConstant;
+uniform vec4 MyOwnConstantArray[10];
+
+void main()
+{
+	vec2 uv = uvVarying;
+	vec4 finalColor = texture2D(texture0, uv);
+	finalColor.r = 0.5;
+	finalColor.g += MyOwnConstant.x*0.5;
+	finalColor.b += MyOwnConstantArray[2].y;
+    	gl_FragColor = finalColor;
+}

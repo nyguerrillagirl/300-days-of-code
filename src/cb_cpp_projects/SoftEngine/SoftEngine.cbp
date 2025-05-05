@@ -56,6 +56,7 @@
 		<Unit filename="src/Graphics/TextureManager.h" />
 		<Unit filename="src/Object/GameObject.h" />
 		<Unit filename="src/Object/IObject.h" />
+		<Unit filename="src/Physics/RigidBody.h" />
 		<Unit filename="src/Physics/Transform.h" />
 		<Unit filename="src/Physics/Vector2D.h" />
 		<Extensions />
