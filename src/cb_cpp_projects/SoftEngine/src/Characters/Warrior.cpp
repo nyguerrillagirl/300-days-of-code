@@ -18,7 +18,7 @@ void Warrior::Draw()
 void Warrior::Update(float dt)
 {
     m_RigidBody->Update(0.2);
-    m_RigidBody->ApplyForceX(-5.0);
+    m_RigidBody->ApplyForceX(5.0);
     m_Transform->TranslateX(m_RigidBody->Position().X);
     m_Transform->TranslateY(m_RigidBody->Position().Y);
 

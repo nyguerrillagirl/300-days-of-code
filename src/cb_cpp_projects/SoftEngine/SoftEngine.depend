@@ -7,11 +7,12 @@
 	"SDL.h"
 	"SDL_image.h"
 
-1746196668 source:c:\300-days-of-code\src\cb_cpp_projects\softengine\src\core\engine.cpp
+1746546661 source:c:\300-days-of-code\src\cb_cpp_projects\softengine\src\core\engine.cpp
 	"Engine.h"
 	"TextureManager.h"
 	"Transform.h"
 	"Warrior.h"
+	"Input.h"
 	<iostream>
 
 1746036150 c:\300-days-of-code\src\cb_cpp_projects\softengine\src\graphics\texturemanager.h
@@ -29,7 +30,7 @@
 1746361763 c:\300-days-of-code\src\cb_cpp_projects\softengine\src\physics\transform.h
 	"Vector2D.h"
 
-1746197615 source:c:\300-days-of-code\src\cb_cpp_projects\softengine\src\characters\warrior.cpp
+1746362592 source:c:\300-days-of-code\src\cb_cpp_projects\softengine\src\characters\warrior.cpp
 	"Warrior.h"
 	"SDL.h"
 	"TextureManager.h"
@@ -60,4 +61,11 @@
 
 1746361163 c:\300-days-of-code\src\cb_cpp_projects\softengine\src\physics\rigidbody.h
 	"Vector2D.h"
+
+1746545826 source:c:\300-days-of-code\src\cb_cpp_projects\softengine\src\inputs\input.cpp
+	"Input.h"
+	"Engine.h"
+
+1746540566 c:\300-days-of-code\src\cb_cpp_projects\softengine\src\inputs\input.h
+	"SDL.h"
 
