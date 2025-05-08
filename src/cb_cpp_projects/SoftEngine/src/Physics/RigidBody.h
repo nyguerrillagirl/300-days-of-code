@@ -9,6 +9,12 @@
 // The default gravity to use for any rigid body
 #define GRAVITY 9.8f
 
+#define FORWARD 1
+#define BACKWARD -1
+
+#define UPWARD -1
+#define DOWNWARD 1
+
 class RigidBody
 {
     public:
