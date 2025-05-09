@@ -1,5 +1,6 @@
 #include "Engine.h"
 #include <iostream>
+#include "Timer.h"
 
 int main(int argc, char** argv)
 {
@@ -17,6 +18,9 @@ int main(int argc, char** argv)
 
         // Render/update the game graphics
         Engine::GetInstance()->Render();
+
+        // Invoke the clock
+        Timer::GetInstance()->Tick();
     }
 
     // Clean everything up

@@ -1,18 +1,20 @@
 # depslib dependency file v1.0
-1745000887 source:c:\300-days-of-code\src\cb_cpp_projects\softengine\main.cpp
+1746721309 source:c:\300-days-of-code\src\cb_cpp_projects\softengine\main.cpp
 	"Engine.h"
 	<iostream>
+	"Timer.h"
 
 1744978228 c:\300-days-of-code\src\cb_cpp_projects\softengine\src\core\engine.h
 	"SDL.h"
 	"SDL_image.h"
 
-1746642003 source:c:\300-days-of-code\src\cb_cpp_projects\softengine\src\core\engine.cpp
+1746721624 source:c:\300-days-of-code\src\cb_cpp_projects\softengine\src\core\engine.cpp
 	"Engine.h"
 	"TextureManager.h"
 	"Transform.h"
 	"Warrior.h"
 	"Input.h"
+	"Timer.h"
 	<iostream>
 
 1746036150 c:\300-days-of-code\src\cb_cpp_projects\softengine\src\graphics\texturemanager.h
@@ -30,7 +32,7 @@
 1746361763 c:\300-days-of-code\src\cb_cpp_projects\softengine\src\physics\transform.h
 	"Vector2D.h"
 
-1746641960 source:c:\300-days-of-code\src\cb_cpp_projects\softengine\src\characters\warrior.cpp
+1746644272 source:c:\300-days-of-code\src\cb_cpp_projects\softengine\src\characters\warrior.cpp
 	"Warrior.h"
 	"SDL.h"
 	"TextureManager.h"
@@ -69,4 +71,10 @@
 
 1746540566 c:\300-days-of-code\src\cb_cpp_projects\softengine\src\inputs\input.h
 	"SDL.h"
+
+1746719336 source:c:\300-days-of-code\src\cb_cpp_projects\softengine\src\timer\timer.cpp
+	"Timer.h"
+	"SDL.h"
+
+1746721312 c:\300-days-of-code\src\cb_cpp_projects\softengine\src\timer\timer.h
 

@@ -3,6 +3,7 @@
 #include "Transform.h"
 #include "Warrior.h"
 #include "Input.h"
+#include "Timer.h"
 
 #include <iostream>
 
@@ -63,7 +64,8 @@ void Engine::Quit()
 
 void Engine::Update()
 {
-    player->Update(0);
+    float dt = Timer::GetInstance()->GetDeltaTime();
+    player->Update(dt);
 }
 
 void Engine::Render()
