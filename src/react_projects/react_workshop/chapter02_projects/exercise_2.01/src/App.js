@@ -5,15 +5,30 @@ import './App.css';
 // Includes exercise 2.03: Building our Username valiadator 
 // Includes exercise 2.04: Using Alternative Class Declarations to avoid binds
 // Includes exercise 2.05: Creating a Validation for Input Fields 
+
 class App extends Component {
-  
-  state = {
-        username: '',
-        password: '',
-        passwordConfirmation: '',
-        email: '',
-        errors: []
-  };
+  constructor(props) {
+    super(props);
+    this.state = {
+      username: '',
+      password: '',
+      passwordConfirmation: '',
+      email: '',
+      errors: []
+    };
+    this.validateUsernameOnBlur = this.validateUsernameOnBlur.bind(this);
+    this.validatePasswordOnBlur = this.validatePasswordOnBlur.bind(this);
+    this.validateEmailOnBlur = this.validateEmailOnBlur.bind(this);
+    this.validatePasswordConfirmationOnBlur = this.validatePasswordConfirmationOnBlur.bind(this);
+}
+
+  clearError(errorMessage) {
+      let errors = this.state.errors;
+      if (errors.includes(errorMessage)) {
+        errors.splice(errors.indexOf(errorMessage), 1);
+      }
+      this.setState({...this.state,errors: errors});
+  }
 
   validateNotEmtpty(fieldName, value) {
     if (value.length <= 0) {
@@ -29,6 +44,7 @@ class App extends Component {
 
   validateUsernameOnBlur = (event) => {
     const username = event.target.value;
+    this.clearError("Username must be filled out.");
     const errors = this.state.errors;
     errors.push(this.validateNotEmtpty("Username", username));
     this.setState({username, errors});
@@ -36,6 +52,7 @@ class App extends Component {
 
   validatePasswordOnBlur = (event) => {
     const password = event.target.value;
+    this.clearError("Password must be filled out.");
     const errors = this.state.errors;
     errors.push(this.validateNotEmtpty("Password", password));
     this.setState({password, errors});
@@ -54,6 +71,33 @@ class App extends Component {
     )
   }
 
+  validateEmailFormat(fieldName, value) {
+    // First clear this error
+    let [lhs, rhs] = value.split('@');
+    lhs = lhs || '';
+    rhs = rhs || '';
+    if (lhs.length <= 0 || rhs.length <= 0) {
+      return `${fieldName} must be a valid email address.`;
+    }
+  }
+
+  validateEmailOnBlur(event) {
+    const email = event.target.value;
+    this.clearError("Email must be a valid email address.")
+    const errors = this.state.errors;
+    errors.push(this.validateEmailFormat("Email", email));
+    this.setState({email, errors});
+  }
+
+  validatePasswordConfirmationOnBlur(event) {
+    const passwordConfirmation = event.target.value;
+    const errors = this.state.errors;
+    if (passwordConfirmation !== this.state.password) {
+      errors.push("Password Confirmation must match Password.");
+    }
+    this.setState({passwordConfirmation, errors});
+  }
+
   displayForm() {
     return (
       <form>
@@ -63,9 +107,9 @@ class App extends Component {
               <label htmlFor="password">Password: </label>
               <input id="password" type="text" onBlur={this.validatePasswordOnBlur}/>
           <label htmlFor="password_confirmation">Password Confirmation:</label>
-          <input id="password_confirmation" type="text" />
+          <input id="password_confirmation" type="text" onBlur={this.validatePasswordConfirmationOnBlur}/>
           <label htmlFor="email">Email: </label>
-          <input id="email" type="text" />
+          <input id="email" type="text" onBlur={this.validateEmailOnBlur}/>
           </div>
           <button onClick={this.submitForm}>Submit</button>
       </form>
