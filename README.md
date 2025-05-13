@@ -34,10 +34,16 @@ made me lose one day.
 Under /docs
 - 2D_GAME_ENGINE_USING_CPP
     - This documents a youtube video I am following "Tutorial Create 2D Game Engine"
-
+- CRVG - Notes on my journey to learn how to build a Car Racing Video Game
+- OTHER
+    - Tiled Map Editor User Manual
 Under /src
+- agk_projects, Projects associated with the AppGameKit tool
 - Under cb_cpp_projects (Code::Blocks C++ Projects)
     - SoftEngine
-        - This is the code associated with the 2D_GAME_ENGINE_USING_CPP
-
+        - This is the code associated with the 2D_GAME_ENGINE_USING_CPP utube tutorial
+    - gameengine
+        - This is associated with the Pikuma 2D Game Engine with C++ and Lua
+    - front_end_course
+        - All the labs+assignments associated with Coursera Meta Frontend Developer Course
 

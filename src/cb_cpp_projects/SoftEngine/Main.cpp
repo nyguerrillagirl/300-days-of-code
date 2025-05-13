@@ -8,7 +8,7 @@ int main(int argc, char** argv)
         std::cout << "Initialization of Engine failed." << std::endl;
     }
 
-
+    // Our Game Loop
     while (Engine::GetInstance()->isRunning()) {
         // Get all current events (e.g. mouse clicks, etc.)
         Engine::GetInstance()->Events();
