@@ -3,19 +3,35 @@
         "height": 4300,
         "width": 2
     },
-    "activeFile": "",
+    "activeFile": "C:/300-days-of-code/src/cb_cpp_projects/SoftEngine/assets/maps/map1.tmx",
     "expandedProjectPaths": [
     ],
     "fileStates": {
+        "C:/300-days-of-code/src/cb_cpp_projects/SoftEngine/assets/maps/map1.tmx": {
+            "scale": 0.7590104166666666,
+            "selectedLayer": 0,
+            "viewCenter": {
+                "x": 959.802374253757,
+                "y": 530.9545049063337
+            }
+        },
+        "C:/300-days-of-code/src/cb_cpp_projects/SoftEngine/assets/maps/map1.tmx#Jungle_terrain": {
+            "scaleInDock": 1
+        },
+        "C:/300-days-of-code/src/cb_cpp_projects/SoftEngine/assets/maps/map1.tmx#objects": {
+            "scaleInDock": 1
+        }
     },
     "last.imagePath": "C:/300-days-of-code/src/tiled_map_editor/map_editor/project01",
     "map.height": 10,
     "map.lastUsedFormat": "tmx",
     "map.width": 10,
     "openFiles": [
+        "C:/300-days-of-code/src/cb_cpp_projects/SoftEngine/assets/maps/map1.tmx"
     ],
     "project": "project01.tiled-project",
     "recentFiles": [
+        "C:/300-days-of-code/src/cb_cpp_projects/SoftEngine/assets/maps/map1.tmx"
     ],
     "tileset.lastUsedFormat": "tsx",
     "tileset.margin": 1,

@@ -29,10 +29,12 @@ bool Engine::Init()
          SDL_Log("Failed to create Renderer: %s", SDL_GetError());
         return false;
     }
-    // Load sprite sheet of the player running
-    TextureManager::GetInstance()->Load("player", "assets/Idle.png");
     // Load sprite sheet of the playing in idle state
+    TextureManager::GetInstance()->Load("player", "assets/Idle.png");
+
+    // Load sprite sheet of the player running
     TextureManager::GetInstance()->Load("player_run", "assets/Run.png");
+
     // Set the player's initial position on the screen and the size of each frame
     player = new Warrior(new Properties("player", 100, 200, 136, 96));
 

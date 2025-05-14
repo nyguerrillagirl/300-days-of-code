@@ -21,6 +21,7 @@
 					<Add directory="src/Animation" />
 					<Add directory="src/Inputs" />
 					<Add directory="src/Timer" />
+					<Add directory="src/Map" />
 				</Compiler>
 			</Target>
 			<Target title="Release">
@@ -38,6 +39,7 @@
 					<Add directory="src/Animation" />
 					<Add directory="src/Inputs" />
 					<Add directory="src/Timer" />
+					<Add directory="src/Map" />
 				</Compiler>
 				<Linker>
 					<Add option="-s" />
@@ -68,6 +70,10 @@
 		<Unit filename="src/Graphics/TextureManager.h" />
 		<Unit filename="src/Inputs/Input.cpp" />
 		<Unit filename="src/Inputs/Input.h" />
+		<Unit filename="src/Map/GameMap.h" />
+		<Unit filename="src/Map/Layer.h" />
+		<Unit filename="src/Map/TileLayer.cpp" />
+		<Unit filename="src/Map/TileLayer.h" />
 		<Unit filename="src/Object/GameObject.h" />
 		<Unit filename="src/Object/IObject.h" />
 		<Unit filename="src/Physics/RigidBody.h" />
