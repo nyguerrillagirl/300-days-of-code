@@ -3,8 +3,9 @@
         "height": 4300,
         "width": 2
     },
-    "activeFile": "C:/300-days-of-code/src/cb_cpp_projects/SoftEngine/assets/maps/map1.tmx",
+    "activeFile": "",
     "expandedProjectPaths": [
+        "."
     ],
     "fileStates": {
         "C:/300-days-of-code/src/cb_cpp_projects/SoftEngine/assets/maps/map1.tmx": {
@@ -23,11 +24,10 @@
         }
     },
     "last.imagePath": "C:/300-days-of-code/src/tiled_map_editor/map_editor/project01",
-    "map.height": 10,
+    "map.height": 20,
     "map.lastUsedFormat": "tmx",
-    "map.width": 10,
+    "map.width": 60,
     "openFiles": [
-        "C:/300-days-of-code/src/cb_cpp_projects/SoftEngine/assets/maps/map1.tmx"
     ],
     "project": "project01.tiled-project",
     "recentFiles": [
