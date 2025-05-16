@@ -13,6 +13,8 @@
 				<Option compiler="gcc" />
 				<Compiler>
 					<Add option="-g" />
+					<Add directory="./" />
+					<Add directory="src" />
 				</Compiler>
 			</Target>
 			<Target title="Release">
@@ -22,6 +24,8 @@
 				<Option compiler="gcc" />
 				<Compiler>
 					<Add option="-O2" />
+					<Add directory="./" />
+					<Add directory="src" />
 				</Compiler>
 				<Linker>
 					<Add option="-s" />
@@ -468,6 +472,8 @@
 		<Unit filename="libs/lua/lualib.h" />
 		<Unit filename="libs/sol/LICENCE" />
 		<Unit filename="libs/sol/sol.hpp" />
+		<Unit filename="src/Game.cpp" />
+		<Unit filename="src/Game.h" />
 		<Unit filename="src/Main.cpp" />
 		<Extensions />
 	</Project>

@@ -24,6 +24,7 @@ class GameMap
         }
 
     private:
+        friend class MapParser;
         std::vector<Layer*> m_MapLayers;
 };
 

@@ -100,15 +100,9 @@
 	<stdint.h>
 	"imstb_textedit.h"
 
-1747069942 source:c:\300-days-of-code\src\cb_cpp_projects\gameengine\src\main.cpp
+1747338856 source:c:\300-days-of-code\src\cb_cpp_projects\gameengine\src\main.cpp
 	<iostream>
-	<SDL.h>
-	<SDL_image.h>
-	<SDL_ttf.h>
-	<SDL_mixer.h>
-	<glm/glm.hpp>
-	<imgui/imgui.h>
-	<sol/sol.hpp>
+	"Game.h"
 
 1747060993 source:c:\300-days-of-code\src\cb_cpp_projects\gameengine\libs\glm\detail\glm.cpp
 	<glm/gtx/dual_quaternion.hpp>
@@ -1534,4 +1528,11 @@
 	"lua.h"
 	"lualib.h"
 	"lauxlib.h"
+
+1747339738 source:c:\300-days-of-code\src\cb_cpp_projects\gameengine\src\game.cpp
+	"Game.h"
+	<iostream>
+
+1747344737 c:\300-days-of-code\src\cb_cpp_projects\gameengine\src\game.h
+	<SDL.h>
 

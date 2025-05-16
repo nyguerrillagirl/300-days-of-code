@@ -526,3 +526,61 @@
 	"begin_code.h"
 	"close_code.h"
 
+1747319113 source:c:\300-days-of-code\src\cb_cpp_projects\softengine\src\map\tilelayer.cpp
+	"TileLayer.h"
+
+1747319351 c:\300-days-of-code\src\cb_cpp_projects\softengine\src\map\tilelayer.h
+	<string>
+	<vector>
+	"Layer.h"
+	"Vector2D.h"
+
+1747178727 c:\300-days-of-code\src\cb_cpp_projects\softengine\src\map\layer.h
+
+1747309750 source:c:\300-days-of-code\src\cb_cpp_projects\softengine\src\vendor\tinyxml\tinystr.cpp
+	"tinystr.h"
+
+1747309750 c:\300-days-of-code\src\cb_cpp_projects\softengine\src\vendor\tinyxml\tinystr.h
+	<assert.h>
+	<string.h>
+
+1747309750 source:c:\300-days-of-code\src\cb_cpp_projects\softengine\src\vendor\tinyxml\tinyxml.cpp
+	<ctype.h>
+	<sstream>
+	<iostream>
+	"tinyxml.h"
+
+1747309750 c:\300-days-of-code\src\cb_cpp_projects\softengine\src\vendor\tinyxml\tinyxml.h
+	<ctype.h>
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	<assert.h>
+	<string>
+	<iostream>
+	<sstream>
+	"tinystr.h"
+
+1747309750 source:c:\300-days-of-code\src\cb_cpp_projects\softengine\src\vendor\tinyxml\tinyxmlerror.cpp
+	"tinyxml.h"
+
+1747309750 source:c:\300-days-of-code\src\cb_cpp_projects\softengine\src\vendor\tinyxml\tinyxmlparser.cpp
+	<ctype.h>
+	<stddef.h>
+	"tinyxml.h"
+	<windows.h>
+
+1747321203 source:c:\300-days-of-code\src\cb_cpp_projects\softengine\src\map\mapparser.cpp
+	"MapParser.h"
+
+1747319458 c:\300-days-of-code\src\cb_cpp_projects\softengine\src\map\mapparser.h
+	<map>
+	<string>
+	"GameMap.h"
+	"TileLayer.h"
+	"tinyxml.h"
+
+1747179243 c:\300-days-of-code\src\cb_cpp_projects\softengine\src\map\gamemap.h
+	<vector>
+	"Layer.h"
+

@@ -22,6 +22,7 @@
 					<Add directory="src/Inputs" />
 					<Add directory="src/Timer" />
 					<Add directory="src/Map" />
+					<Add directory="src/Vendor/TinyXML" />
 				</Compiler>
 			</Target>
 			<Target title="Release">
@@ -72,6 +73,8 @@
 		<Unit filename="src/Inputs/Input.h" />
 		<Unit filename="src/Map/GameMap.h" />
 		<Unit filename="src/Map/Layer.h" />
+		<Unit filename="src/Map/MapParser.cpp" />
+		<Unit filename="src/Map/MapParser.h" />
 		<Unit filename="src/Map/TileLayer.cpp" />
 		<Unit filename="src/Map/TileLayer.h" />
 		<Unit filename="src/Object/GameObject.h" />
@@ -81,6 +84,12 @@
 		<Unit filename="src/Physics/Vector2D.h" />
 		<Unit filename="src/Timer/Timer.cpp" />
 		<Unit filename="src/Timer/Timer.h" />
+		<Unit filename="src/Vendor/TinyXML/tinystr.cpp" />
+		<Unit filename="src/Vendor/TinyXML/tinystr.h" />
+		<Unit filename="src/Vendor/TinyXML/tinyxml.cpp" />
+		<Unit filename="src/Vendor/TinyXML/tinyxml.h" />
+		<Unit filename="src/Vendor/TinyXML/tinyxmlerror.cpp" />
+		<Unit filename="src/Vendor/TinyXML/tinyxmlparser.cpp" />
 		<Extensions />
 	</Project>
 </CodeBlocks_project_file>
