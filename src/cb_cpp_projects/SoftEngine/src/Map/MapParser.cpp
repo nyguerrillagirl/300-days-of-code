@@ -4,7 +4,7 @@ MapParser* MapParser::s_Instance = nullptr;
 
 bool MapParser::Load()
 {
-    return Parse("level1", "assets/maps/my_map.tmx");
+    return Parse("MAP", "assets/maps/map1.tmx");
 
 }
 
@@ -76,10 +76,10 @@ Tileset MapParser::ParseTileset(TiXmlElement* xmlTileset)
     // Calculate the LastID (makes sense if there is more than one tileset...
     tileset.LastID = (tileset.FirstID + tileset.TileCount) - 1;
 
-    // Extract the size/width of each tile
+    // Extract the number of columns in the tileset
     xmlTileset->Attribute("columns", &tileset.Width);
 
-    // Calculate the height of each tile
+    // Calculate the height or rows of tiles
     tileset.Height = tileset.TileCount / tileset.Width;
 
 
@@ -143,6 +143,11 @@ TileLayer* MapParser::ParseTileLayer(TiXmlElement* xmlLayer, TilesetsList tilese
 
 void MapParser::Clean()
 {
+    std::map<std::string, GameMap*>::iterator it;
+    for(it = m_MapDictionary.begin(); it != m_MapDictionary.end(); it++) {
+        it->second = nullptr;
+    }
 
+    m_MapDictionary.clear();
 }
 

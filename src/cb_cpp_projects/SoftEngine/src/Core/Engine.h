@@ -2,12 +2,12 @@
 #define ENGINE_H
 #include "SDL.h"
 #include "SDL_image.h"
+#include "GameMap.h"
 
 #define SCREEN_WIDTH 960
 #define SCREEN_HEIGHT 640
 
-class Engine
-{
+class Engine {
     public:
         static Engine* GetInstance() {
             return s_Instance = (s_Instance != nullptr) ? s_Instance : new Engine();
@@ -25,16 +25,22 @@ class Engine
             return m_IsRunning;
         }
 
-        inline  SDL_Renderer* GetRenderer() { return m_Renderer;}
+        inline  SDL_Renderer* GetRenderer() {
+            return m_Renderer;
+        }
 
     protected:
 
     private:
         Engine() {}
-        static Engine* s_Instance;
+        bool m_IsRunning;
+
+        GameMap* m_LevelMap;
+
         SDL_Window* m_Window;
         SDL_Renderer* m_Renderer;
-        bool m_IsRunning;
+
+        static Engine* s_Instance;
 
 };
 

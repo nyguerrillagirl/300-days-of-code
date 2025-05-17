@@ -16,7 +16,7 @@ class MapParser
         // Cleans the map
         void Clean();
 
-        inline GameMap* GameMaps(std::string id) { return m_MapDictionary[id];};
+        inline GameMap* GetMap(std::string id) { return m_MapDictionary[id];};
 
         // Returns the current instance of the MapParser
         inline static MapParser* GetInstance() {
