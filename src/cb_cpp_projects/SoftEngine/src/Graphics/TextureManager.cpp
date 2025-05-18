@@ -1,5 +1,7 @@
 #include "TextureManager.h"
 #include "Engine.h"
+#include "Camera.h"
+
 #include <iostream>
 
 // Initialize our singleton to nullptr
@@ -44,19 +46,26 @@ void TextureManager::Draw(std::string id, int x, int y, int width, int height, S
     // Defines the part of the image we plan on drawing
     SDL_Rect srcRect = {0, 0, width, height};
 
+    // Get current camera position
+    Vector2D cam = Camera::GetInstance()->GetPosition()*0.5;
+
     // Defines where on the screen we will draw our image
-    SDL_Rect dstRect = {x, y, width, height};
+    SDL_Rect dstRect = {x-cam.X, y-cam.Y, width, height};
 
     // Draw our texture to the screen
     SDL_RenderCopyEx(Engine::GetInstance()->GetRenderer(), m_TextureMap[id], &srcRect, &dstRect, 0, nullptr, flip);
 
 }
+
 void TextureManager::DrawTile(std::string tilesetID, int tileSize, int x, int y, int row, int col, SDL_RendererFlip flip) {
     // Defines the part of the image we plan on drawing in the tileset
     SDL_Rect srcRect = {tileSize * col, tileSize * row, tileSize, tileSize};
 
+    // Get current camera position
+    Vector2D cam = Camera::GetInstance()->GetPosition();
+
     // Defines where on the screen we will draw our image
-    SDL_Rect dstRect = {x, y, tileSize, tileSize};
+    SDL_Rect dstRect = {x - cam.X, y - cam.Y, tileSize, tileSize};
 
     // Draw our texture to the screen
     SDL_RenderCopyEx(Engine::GetInstance()->GetRenderer(), m_TextureMap[tilesetID], &srcRect, &dstRect, 0, nullptr, flip);
@@ -64,7 +73,11 @@ void TextureManager::DrawTile(std::string tilesetID, int tileSize, int x, int y,
 
 void TextureManager::DrawFrame(std::string id, int x, int y, int width, int height, int row, int frame, SDL_RendererFlip flip) {
     SDL_Rect srcRect = {width*frame, height*row, width, height};
-    SDL_Rect dstRect = {x, y, width, height};
+
+        // Get current camera position
+    Vector2D cam = Camera::GetInstance()->GetPosition();
+
+    SDL_Rect dstRect = {x - cam.X, y - cam.Y, width, height};
 
     SDL_RenderCopyEx(Engine::GetInstance()->GetRenderer(), m_TextureMap[id], &srcRect, &dstRect, 0, nullptr, flip);
 

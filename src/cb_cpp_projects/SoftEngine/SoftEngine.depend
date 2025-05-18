@@ -9,7 +9,7 @@
 	"SDL_image.h"
 	"GameMap.h"
 
-1747423942 source:c:\300-days-of-code\src\cb_cpp_projects\softengine\src\core\engine.cpp
+1747513612 source:c:\300-days-of-code\src\cb_cpp_projects\softengine\src\core\engine.cpp
 	"Engine.h"
 	"TextureManager.h"
 	"Transform.h"
@@ -17,6 +17,7 @@
 	"Input.h"
 	"Timer.h"
 	"MapParser.h"
+	"Camera.h"
 	<iostream>
 
 1747420070 c:\300-days-of-code\src\cb_cpp_projects\softengine\src\graphics\texturemanager.h
@@ -24,9 +25,10 @@
 	<map>
 	"SDL.h"
 
-1747428343 source:c:\300-days-of-code\src\cb_cpp_projects\softengine\src\graphics\texturemanager.cpp
+1747513677 source:c:\300-days-of-code\src\cb_cpp_projects\softengine\src\graphics\texturemanager.cpp
 	"TextureManager.h"
 	"Engine.h"
+	"Camera.h"
 	<iostream>
 
 1745282383 c:\300-days-of-code\src\cb_cpp_projects\softengine\src\physics\vector2d.h
@@ -35,7 +37,7 @@
 1746361763 c:\300-days-of-code\src\cb_cpp_projects\softengine\src\physics\transform.h
 	"Vector2D.h"
 
-1746721701 source:c:\300-days-of-code\src\cb_cpp_projects\softengine\src\characters\warrior.cpp
+1747508652 source:c:\300-days-of-code\src\cb_cpp_projects\softengine\src\characters\warrior.cpp
 	"Warrior.h"
 	"SDL.h"
 	"TextureManager.h"
@@ -50,10 +52,11 @@
 	<GameObject.h>
 	<string>
 
-1747423669 c:\300-days-of-code\src\cb_cpp_projects\softengine\src\object\gameobject.h
+1747508880 c:\300-days-of-code\src\cb_cpp_projects\softengine\src\object\gameobject.h
 	"IObject.h"
 	"Transform.h"
 	"SDL.h"
+	"Point.h"
 
 1745927850 c:\300-days-of-code\src\cb_cpp_projects\softengine\src\object\iobject.h
 
@@ -574,7 +577,7 @@
 	"tinyxml.h"
 	<windows.h>
 
-1747429149 source:c:\300-days-of-code\src\cb_cpp_projects\softengine\src\map\mapparser.cpp
+1747509938 source:c:\300-days-of-code\src\cb_cpp_projects\softengine\src\map\mapparser.cpp
 	"MapParser.h"
 
 1747423468 c:\300-days-of-code\src\cb_cpp_projects\softengine\src\map\mapparser.h
@@ -587,4 +590,16 @@
 1747327612 c:\300-days-of-code\src\cb_cpp_projects\softengine\src\map\gamemap.h
 	<vector>
 	"Layer.h"
+
+1747498409 source:c:\300-days-of-code\src\cb_cpp_projects\softengine\src\camera\camera.cpp
+	"Camera.h"
+
+1747498591 c:\300-days-of-code\src\cb_cpp_projects\softengine\src\camera\camera.h
+	"SDL.h"
+	"Point.h"
+	"Vector2D.h"
+	"Engine.h"
+
+1747489240 c:\300-days-of-code\src\cb_cpp_projects\softengine\src\physics\point.h
+	<iostream>
 

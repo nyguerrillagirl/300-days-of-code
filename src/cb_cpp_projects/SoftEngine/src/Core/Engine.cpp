@@ -5,6 +5,7 @@
 #include "Input.h"
 #include "Timer.h"
 #include "MapParser.h"
+#include "Camera.h"
 
 #include <iostream>
 
@@ -47,11 +48,14 @@ bool Engine::Init()
     // Load sprite sheet of the player running
     TextureManager::GetInstance()->Load("player_run", "assets/Run.png");
 
+    // Load a background image
+    TextureManager::GetInstance()->Load("bg", "assets/images/bg.png");
+
     // Set the player's initial position on the screen and the size of each frame
     player = new Warrior(new Properties("player", 100, 200, 136, 96));
 
-    Transform tf;
-    tf.Log();
+    Camera::GetInstance()->SetTarget(player->GetOrigin());
+
 
     return m_IsRunning = true;
 }
@@ -81,6 +85,7 @@ void Engine::Update()
     float dt = Timer::GetInstance()->GetDeltaTime();
     m_LevelMap->Update();
     player->Update(dt);
+    Camera::GetInstance()->Update(dt);
 }
 
 void Engine::Render()
@@ -91,6 +96,8 @@ void Engine::Render()
     // Clear the screen with the draw color
     SDL_RenderClear(m_Renderer);
 
+    // Draw our background
+    TextureManager::GetInstance()->Draw("bg", 0, 0, 2100, 1050);
     // Draw our map
     m_LevelMap->Render();
 
