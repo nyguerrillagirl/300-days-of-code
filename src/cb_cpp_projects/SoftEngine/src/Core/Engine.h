@@ -21,6 +21,8 @@ class Engine {
         void Render();
         void Events();
 
+        GameMap* GetMap() { return m_LevelMap;}
+
         inline bool isRunning() {
             return m_IsRunning;
         }
