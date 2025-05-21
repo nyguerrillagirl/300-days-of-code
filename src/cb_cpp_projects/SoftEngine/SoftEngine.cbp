@@ -87,6 +87,7 @@
 		<Unit filename="src/Map/TileLayer.h" />
 		<Unit filename="src/Object/GameObject.h" />
 		<Unit filename="src/Object/IObject.h" />
+		<Unit filename="src/Physics/Collider.h" />
 		<Unit filename="src/Physics/Point.h" />
 		<Unit filename="src/Physics/RigidBody.h" />
 		<Unit filename="src/Physics/Transform.h" />
