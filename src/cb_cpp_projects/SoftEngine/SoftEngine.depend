@@ -9,7 +9,7 @@
 	"SDL_image.h"
 	"GameMap.h"
 
-1747513612 source:c:\300-days-of-code\src\cb_cpp_projects\softengine\src\core\engine.cpp
+1747869514 source:c:\300-days-of-code\src\cb_cpp_projects\softengine\src\core\engine.cpp
 	"Engine.h"
 	"TextureManager.h"
 	"Transform.h"
@@ -43,10 +43,12 @@
 	"TextureManager.h"
 	"Input.h"
 
-1746361062 c:\300-days-of-code\src\cb_cpp_projects\softengine\src\characters\warrior.h
+1747869834 c:\300-days-of-code\src\cb_cpp_projects\softengine\src\characters\warrior.h
 	"Character.h"
 	"Animation.h"
 	"RigidBody.h"
+	"Collider.h"
+	"Vector2D.h"
 
 1746056240 c:\300-days-of-code\src\cb_cpp_projects\softengine\src\characters\character.h
 	<GameObject.h>
@@ -610,4 +612,6 @@
 1747666449 c:\300-days-of-code\src\cb_cpp_projects\softengine\src\collision\collisionhandler.h
 	"SDL.h"
 	"TileLayer.h"
+
+1747740433 c:\300-days-of-code\src\cb_cpp_projects\softengine\src\physics\collider.h
 
