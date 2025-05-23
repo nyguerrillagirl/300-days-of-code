@@ -43,7 +43,6 @@ Under /docs
     - Tiled Map Editor User Manual
 Under /src
 - agk_projects, Projects associated with the AppGameKit tool
-
 - cb_cpp_projects (Code::Blocks C++ Projects)
     - SoftEngine
         - This is the code associated with the 2D_GAME_ENGINE_USING_CPP utube tutorial
@@ -53,11 +52,16 @@ Under /src
     - All FreeCodeCamp projects
 - front_end_course
     - All the labs+assignments associated with Coursera Meta Frontend Developer Course
+- java_projects
+    - fang
+    	- This is under it's own repo: https://github.com/nyguerrillagirl/fang
 - html_projects
     - All html projects (includes css+javascript)
 - leetcode
-    - All leetcode attempts (not much progress here since I decided NOT
-        TO SEEK EMPLOYMENT)
+    - leetcode_java
+    	- This is under it's own repo: https://github.com/nyguerrillagirl/leetcode_java
+    - leetcode_python
+    	- This is under it's own repo: https://github.com/nyguerrillagirl/leetcode_python
 - p5js_projects
         - Projects written using the p5js framework
 - python_projects
@@ -70,3 +74,4 @@ Under /src
 - udemy_courses
     - flappy_bird
     - sfg-thymeleaf-course
+    	- This is under it's own repo - https://github.com/nyguerrillagirl/sfg-thymeleaf-course
