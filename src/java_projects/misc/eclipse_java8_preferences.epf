@@ -1,0 +1,17 @@
+#Fri May 23 15:04:19 EDT 2025
+\!/=
+/instance/org.eclipse.jdt.core/org.eclipse.jdt.core.compiler.codegen.targetPlatform=1.8
+/instance/org.eclipse.jdt.core/org.eclipse.jdt.core.compiler.compliance=1.8
+/instance/org.eclipse.jdt.core/org.eclipse.jdt.core.compiler.problem.enablePreviewFeatures=disabled
+/instance/org.eclipse.jdt.core/org.eclipse.jdt.core.compiler.problem.reportPreviewFeatures=warning
+/instance/org.eclipse.jdt.core/org.eclipse.jdt.core.compiler.release=disabled
+/instance/org.eclipse.jdt.core/org.eclipse.jdt.core.compiler.source=1.8
+/instance/org.eclipse.jdt.core/org.eclipse.jdt.core.compiler.taskCaseSensitive=enabled
+/instance/org.eclipse.jdt.core/org.eclipse.jdt.core.compiler.taskPriorities=NORMAL,HIGH,NORMAL
+/instance/org.eclipse.jdt.core/org.eclipse.jdt.core.compiler.taskTags=TODO,FIXME,XXX
+/instance/org.eclipse.jdt.launching/org.eclipse.jdt.launching.PREF_VM_XML=<?xml version\="1.0" encoding\="UTF-8" standalone\="no"?>\r\n<vmSettings defaultVM\="57,org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType40,C\:\\Program Files (x86)\\Java\\jre1.8.0_202" defaultVMConnector\="">\r\n    <vmType id\="org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType">\r\n        <vm id\="1747997469920" name\="jre" path\="C\:\\eclipse\\plugins\\org.eclipse.justj.openjdk.hotspot.jre.full.win32.x86_64_21.0.6.v20250130-0529\\jre"/>\r\n        <vm id\="C\:\\Program Files\\Java\\jdk-17" name\="jdk-17" path\="C\:\\Program Files\\Java\\jdk-17"/>\r\n        <vm id\="C\:\\Program Files\\Java\\jdk-19" name\="jdk-19" path\="C\:\\Program Files\\Java\\jdk-19"/>\r\n        <vm id\="C\:\\Program Files\\Java\\jdk-21" name\="jdk-21" path\="C\:\\Program Files\\Java\\jdk-21"/>\r\n        <vm id\="C\:\\Program Files (x86)\\Java\\jdk1.8.0_202" name\="jdk1.8.0_202" path\="C\:\\Program Files (x86)\\Java\\jdk1.8.0_202"/>\r\n        <vm id\="C\:\\Program Files (x86)\\Java\\jre1.8.0_202" name\="jre1.8.0_202" path\="C\:\\Program Files (x86)\\Java\\jre1.8.0_202"/>\r\n    </vmType>\r\n</vmSettings>\r\n
+/instance/org.eclipse.jdt.ui/org.eclipse.jdt.ui.formatterprofiles.version=23
+@org.eclipse.jdt.core=3.41.0.v20250213-2010
+@org.eclipse.jdt.launching=3.23.200.v20250110-0740
+@org.eclipse.jdt.ui=3.34.0.v20250213-2215
+file_export_version=3.0
