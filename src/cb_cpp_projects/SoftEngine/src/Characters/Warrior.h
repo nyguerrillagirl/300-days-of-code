@@ -21,11 +21,13 @@ class Warrior : public Character
 
 
     private:
+        // Tracks the "state" of the player, it will be used
+        // to determine the animation to use for the player
         bool m_IsJumping;   // indicates the player is jumping
         bool m_IsGrounded;  // indicates the player is grounded (so player can jump)
 
-        float m_JumpTime;   // ?
-        float m_JumpForce;  // the force the player uses to jump up
+        float m_JumpTime;   // the time the player will take to move up
+        float m_JumpForce;  // the force of the player in the y direction
 
         Collider* m_Collider;   // defines the collision box around the player
         Animation* m_Animation;
