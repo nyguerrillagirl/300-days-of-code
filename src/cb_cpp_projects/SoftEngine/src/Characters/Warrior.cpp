@@ -4,6 +4,7 @@
 #include "Input.h"
 #include "Camera.h"
 #include "Engine.h"
+#include "CollisionHandler.h"
 
 Warrior::Warrior(Properties* props): Character(props) {
     m_JumpTime = JUMP_TIME;
@@ -106,5 +107,5 @@ void Warrior::Update(float dt) {
 }
 
 void Warrior::Clean() {
-    TextureManager::GetInstance()->Clean();
+    TextureManager::GetInstance()->Drop(m_TextureID);
 }

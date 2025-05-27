@@ -1,14 +1,21 @@
-import React from 'react';
+import React, { useState } from 'react';
 
-const UpdatedComponent = (OriginalComponent) => {
+const withCounter = (OriginalComponent) => {
+
     function NewComponent(props) {
-        // render OriginalComponent with additional props
-        return ;
+        const [counter, setCounter] = useState(20
+            
+        );
+
+        return (
+            <OriginalComponent
+                counter={counter}
+                incrementCounter={() => setCounter(counter + 1)}
+                {...props}
+            />
+        )
     }
-    
     return NewComponent;
-    
-   
 };
 
-export default UpdatedComponent;
+export default withCounter

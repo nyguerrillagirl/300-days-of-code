@@ -48,6 +48,9 @@ bool Engine::Init()
     // Load sprite sheet of the player running
     TextureManager::GetInstance()->Load("player_run", "assets/Run.png");
 
+    // Load sprite sheet of the player jumping
+    TextureManager::GetInstance()->Load("player_jump", "assets/Jump.png");
+
     // Load a background image
     TextureManager::GetInstance()->Load("bg", "assets/images/bg.png");
 

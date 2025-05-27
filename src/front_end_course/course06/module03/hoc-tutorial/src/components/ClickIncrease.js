@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import withCounter from "./withCounter.js";
 
-function ClickIncrease() {
+function ClickIncrease(props) {
     const [fontSize, setFontSize] = useState(10);
 
     return (
@@ -10,8 +10,11 @@ function ClickIncrease() {
             Increase with click
         </button>
         <p style={{ fontSize: `${fontSize}px`}}>
-            Size of font: {fontSize}px
+            Size of font in OnClick function: {fontSize}px
         </p>
+        <div>
+            Value of 'name' in ClickIncrease: {props.counter}
+        </div>
         </>
     );
     
