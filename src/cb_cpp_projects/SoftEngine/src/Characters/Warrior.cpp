@@ -98,7 +98,12 @@ void Warrior::Update(float dt) {
     } else {
         m_IsGrounded = false;
     }
-
+    /*
+    if (m_IsJumping || !m_IsGrounded) {
+        // Change to the jumping animation
+        m_Animation->SetProps("player_jump", 1, 2, 150);
+    }
+    */
     // Update the Origin
     m_Origin->X = m_Transform->X + m_Width / 2;
     m_Origin->Y = m_Transform->Y + m_Height / 2;
