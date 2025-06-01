@@ -1,12 +1,20 @@
 # 300-days-of-code
-Today (4/15/2025)I decided to start a new repo to start the next 100 days of code.
-
-This holds material on courses I am taking (will now include notes) + projects
-I will try to create PDF files for all the Microsoft Word document I create. The
-Word documents have the advantage of being able to display animated gifs! 
 
 
-The goal is to stay more focused on the things I am working on. 
+|Date|Description|
+|-----------------|------------------------------------------------------------|
+|Date       |   Description |
+|4/15/2025  |I decided to start a new repo to start the next 100 days of code.|
+|           |This holds material on courses I am taking (will now include notes) + projects|
+|           |I will try to create PDF files for all the Microsoft Word document I create. The|
+|           |Word documents have the advantage of being able to display animated gifs!| 
+| 6/1/2025  |Re-organized the main tasks I am working on. I moved to the backlog|
+|           | those items I am not really working on. |
+|           | Made decision: No more watching of AOE 2 on Twitch until I complete|
+|           | my Coursera courses and other stuff. |
+|           | The goal is to stay more focused on the things I am working on. |
+
+
 
 # GOAL #1: Complete all current Coursera courses
 - Meta Frontend Developer
@@ -24,16 +32,18 @@ The goal is to stay more focused on the things I am working on.
         - 2D Game Physics Engine Programming
     - [AppGameKit](see: https://www.appgamekit.com/)
 
-# Goal #4: Full Stack Development
-- Spring
-
-# Goal #5: Book Club
+# Goal #4: Book Club
 - Tech Reading
 - Non-tech Reading
 
 I decided to move some of the documentation I create as part of the 300-days-of-code 
 under Github.  I usually have them saved in OneDrive but I got a corrupt file which
 made me lose one day of notes.
+
+# BACKLOG:
+|Topic/Book/Course|Description                          |
+|-----------------|-------------------------------------|
+| Spring          | moved to backlog for now            |
 
 Under /docs
 - 2D_GAME_ENGINE_USING_CPP

@@ -13,3 +13,6 @@
 [submodule "src/udemy_courses/sfg-thymeleaf-course"]
 	path = src/udemy_courses/sfg-thymeleaf-course
 	url = https://github.com/nyguerrillagirl/sfg-thymeleaf-course
+[submodule "src/react_projects/netninja/Complete-React-Tutorial"]
+	path = src/react_projects/netninja/Complete-React-Tutorial
+	url = https://github.com/nyguerrillagirl/Complete-React-Tutorial.git
