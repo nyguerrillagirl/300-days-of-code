@@ -4,31 +4,31 @@ import { faEnvelope } from "@fortawesome/free-solid-svg-icons";
 import {
   faGithub,
   faLinkedin,
-  faMedium,
-  faStackOverflow,
+  faSteam,
+  faDiscord,
 } from "@fortawesome/free-brands-svg-icons";
 import { Box, HStack } from "@chakra-ui/react";
 
 const socials = [
   {
     icon: faEnvelope,
-    url: "mailto: hello@example.com",
+    url: "mailto: figueroa@brainycode.com",
   },
   {
     icon: faGithub,
-    url: "https://github.com",
+    url: "https://github.com/nyguerrillagirl",
   },
   {
     icon: faLinkedin,
-    url: "https://www.linkedin.com",
+    url: "https://www.linkedin.com/in/lorraine-figueroa-4220254",
   },
   {
-    icon: faMedium,
-    url: "https://medium.com",
+    icon: faSteam,
+    url: "https://steamcommunity.com/profiles/76561197993490051/",
   },
   {
-    icon: faStackOverflow,
-    url: "https://stackoverflow.com",
+    icon: faDiscord,
+    url: "https://discord.com/users/lafigueroa",
   },
 ];
 
@@ -44,6 +44,35 @@ const Header = () => {
     }
   };
 
+  const SocialMediaLinks = () => {
+    return (
+      <HStack spacing={4}>
+        {socials.map((social, index) => (
+          <a
+            key={index}
+            href={social.url}
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <FontAwesomeIcon icon={social.icon} size="lg" />
+          </a>
+        ))}
+      </HStack>
+    );
+  }
+
+  const InternalLinks = () => {
+    return (
+      <HStack spacing={8}>
+        <a href="#projects-section" onClick={handleClick("projects")}>
+          Projects
+        </a>
+        <a href="#contactme-section" onClick={handleClick("contactme")}>
+          Contact me
+        </a>
+      </HStack>
+    );
+  }
   return (
     <Box
       position="fixed"
@@ -65,10 +94,12 @@ const Header = () => {
         >
           <nav>
             {/* Add social media links based on the `socials` data */}
+            <SocialMediaLinks/>
           </nav>
           <nav>
             <HStack spacing={8}>
               {/* Add links to Projects and Contact me section */}
+              <InternalLinks />
             </HStack>
           </nav>
         </HStack>
