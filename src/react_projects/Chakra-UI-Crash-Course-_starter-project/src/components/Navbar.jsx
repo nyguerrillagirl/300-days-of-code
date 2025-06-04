@@ -1,4 +1,4 @@
-import { Flex, Box, Heading, Text, Button, Spacer, HStack, useToast } from "@chakra-ui/react";
+import { Flex, Box, Heading, Text, Button, Spacer, HStack, useToast, Avatar, AvatarBadge } from "@chakra-ui/react";
 import { UnlockIcon } from "@chakra-ui/icons";
 
 export default function Navbar() {
@@ -20,7 +20,11 @@ export default function Navbar() {
             <Heading as="h1">Dojo Tasks</Heading>
             <Spacer />
             <HStack spacing="20px">
-                <Box bg="gray.200" p="10px">M</Box>
+                <Avatar src="/img/mario.png" name="Mario">
+                    <AvatarBadge width="1.3em" bg="teal.500">
+                        <Text fontSize="xs" color="white">3</Text>
+                    </AvatarBadge>
+                </Avatar>
                 <Text>mario@netninja.dev</Text>
                 <Button colorScheme="purple" onClick={showToast}>Logout</Button>
             </HStack>
