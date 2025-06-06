@@ -22,35 +22,25 @@ const LandingSection = () => {
   const {isLoading, response, submit} = useSubmit();
   const { onOpen } = useAlertContext();
 
-
+  /*
   const validationSchema = Yup.object().shape({
        firstName: Yup.string().required("First Name is required"),
        email: Yup.string().email("Invalid email").required("Email is required"),
        password: Yup.string().required("Password is required").min(8, "Password must be at least 8 characters")
      });
+     */
 
   const formik = useFormik({
-    initialValues: { firstName: '', email: '', type:'hireMe', comment:'' },
+    initialValues: {firstName: "", email: "", type: "hireMe", comment: ""},
     onSubmit: (values) => {
-      submit("https://jsonplaceholder.typicode.com/posts", values)
-        .then(() => {
-          onOpen({
-            title: "Success",
-            description: response.message,
-            status: response.type,
-          });
-        })
-        .catch(() => {
-          onOpen({
-            title: "Error",
-            description: "Something went wrong, please try again later!",
-            status: "Failed to obtain response.",
-          });
-        });
-      formik.resetForm();  
-
+      alert(JSON.stringify(values, null, 2));
     },
-    validationSchema: validationSchema,
+    validationSchema: Yup.object({
+      firstName: Yup.string().required("First Name is required"),
+       email: Yup.string().email("Invalid email").required("Email is required"),
+       password: Yup.string().required("Password is required").min(8, "Password must be at least 8 characters")
+
+    }),
   });
 
   return (
@@ -66,7 +56,7 @@ const LandingSection = () => {
         </Heading>
         <Box p={6} rounded="md" w="100%">
 
-            <form submit={submit}>
+            <form onSubmit={formik.handleSubmit}>
               <VStack spacing={4}>
                 <FormControl isInvalid={false}>
                   <FormLabel htmlFor="firstName">Name</FormLabel>
@@ -74,8 +64,13 @@ const LandingSection = () => {
                     id="firstName"
                     name="firstName"
                     placeholder="Enter your first name"
+                    onChange={formik.handleChange}
+                    onBlur={formik.handleBlur}
+                    value={formik.values.firstName}
                   />
-                  <FormErrorMessage></FormErrorMessage>
+                  <FormErrorMessage>
+                  
+                  </FormErrorMessage>
                 </FormControl>
                 <FormControl isInvalid={false}>
                   <FormLabel htmlFor="email">Email Address</FormLabel>
@@ -84,12 +79,18 @@ const LandingSection = () => {
                     name="email"
                     type="email"
                     placeholder="Enter your email address"
+                    onChange={formik.handleChange}
+                    onBlur={formik.handleBlur}
+                    value={formik.values.email}
                   />
                   <FormErrorMessage></FormErrorMessage>
                 </FormControl>
                 <FormControl>
                   <FormLabel htmlFor="type">Type of enquiry</FormLabel>
-                  <Select id="type" name="type" color="white" bg="#512DA8" fontWeight="normal">
+                  <Select id="type" name="type" color="white" bg="#512DA8" fontWeight="normal"                     
+                      onChange={formik.handleChange}
+                      value={formik.values.type}
+                       onBlur={formik.handleBlur}>
                     <option value="hireMe"  style={{backgroundColor:"#512DA8"}}>Freelance project proposal</option>
                     <option value="openSource" style={{backgroundColor:"#512DA8"}}>
                       Open source consultancy session
@@ -104,6 +105,10 @@ const LandingSection = () => {
                     name="comment"
                     height={250}
                     placeholder="Enter your message here"
+                    onChange={formik.handleChange}
+                    onBlur={formik.handleBlur}
+                    value={formik.values.comment}
+
                   />
                   <FormErrorMessage></FormErrorMessage>
                 </FormControl>
