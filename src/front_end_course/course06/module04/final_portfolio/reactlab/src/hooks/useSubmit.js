@@ -15,14 +15,18 @@ const useSubmit = () => {
     setLoading(true);
     try {
       await wait(2000);
+      // DEBUGGUBG: REMOVE
       if (random < 0.5) {
+        console.log("userSubmit: Simulating a failure");
         throw new Error("Something went wrong");
       }
+      console.log("userSubmit: Simulating a success");
       setResponse({
         type: 'success',
         message: `Thanks for your submission ${data.firstName}, we will get back to you shortly!`,
       })
     } catch (error) {
+      console.log("userSubmit: Error!", error);
       setResponse({
         type: 'error',
         message: 'Something went wrong, please try again later!',

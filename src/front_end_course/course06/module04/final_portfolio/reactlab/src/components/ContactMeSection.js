@@ -17,30 +17,58 @@ import FullScreenSection from "./FullScreenSection";
 import useSubmit from "../hooks/useSubmit";
 import {useAlertContext} from "../context/alertContext";
 
+
 const LandingSection = () => {
 
   const {isLoading, response, submit} = useSubmit();
   const { onOpen } = useAlertContext();
 
-  /*
-  const validationSchema = Yup.object().shape({
-       firstName: Yup.string().required("First Name is required"),
-       email: Yup.string().email("Invalid email").required("Email is required"),
-       password: Yup.string().required("Password is required").min(8, "Password must be at least 8 characters")
+  
+  const validationSchema = Yup.object({
+       firstName: Yup.string()
+                    .required("First Name is required")
+                    .min(4, "First name must be at least 4 characters"),
+       email:     Yup.string()
+                    .email("Invalid email")
+                    .required("Email is required"),
+      type:      Yup.string()
+                    .oneOf(["hireMe", "openSource", "other"], "Invalid type of enquiry"),
+       comment: Yup.string()
+                    .required("Comment is required")
+                    .min(10, "Comment must be at least 10 characters")
      });
-     */
+    
 
   const formik = useFormik({
     initialValues: {firstName: "", email: "", type: "hireMe", comment: ""},
     onSubmit: (values) => {
-      alert(JSON.stringify(values, null, 2));
-    },
-    validationSchema: Yup.object({
-      firstName: Yup.string().required("First Name is required"),
-       email: Yup.string().email("Invalid email").required("Email is required"),
-       password: Yup.string().required("Password is required").min(8, "Password must be at least 8 characters")
+      //alert(JSON.stringify(values, null, 2));
+      // We simulate sending a request to some backend API
+      // 50% of the time it will succeed, 50% of the time it will fail
+      // disable default form submission
+      
+      submit("/api/contact", values)
+        .then(() => {
+          if (response) {
+            console.log("Submission successful:", response.type, response.message);
+            onOpen(response.type, response.message);
+          } else {
+            console.error("No response received from submit function");
+            throw new Error("No response from submit function");
+          }
+        })
+        .catch((error) => {
+          console.error("Submission error:", error);
+          onOpen(
+            "error",
+            "An unexpected error occurred. Please try again later."
+          );
 
-    }),
+        });
+      formik.resetForm();
+
+    },
+    validationSchema: validationSchema,
   });
 
   return (
@@ -55,10 +83,9 @@ const LandingSection = () => {
           Contact me
         </Heading>
         <Box p={6} rounded="md" w="100%">
-
             <form onSubmit={formik.handleSubmit}>
               <VStack spacing={4}>
-                <FormControl isInvalid={false}>
+                <FormControl isInvalid={formik.touched.firstName && !!formik.errors.firstName}>
                   <FormLabel htmlFor="firstName">Name</FormLabel>
                   <Input
                     id="firstName"
@@ -69,10 +96,10 @@ const LandingSection = () => {
                     value={formik.values.firstName}
                   />
                   <FormErrorMessage>
-                  
+                    {formik.errors.firstName}
                   </FormErrorMessage>
                 </FormControl>
-                <FormControl isInvalid={false}>
+                <FormControl isInvalid={formik.touched.email && !!formik.errors.email}>
                   <FormLabel htmlFor="email">Email Address</FormLabel>
                   <Input
                     id="email"
@@ -83,7 +110,7 @@ const LandingSection = () => {
                     onBlur={formik.handleBlur}
                     value={formik.values.email}
                   />
-                  <FormErrorMessage></FormErrorMessage>
+                  <FormErrorMessage>{formik.errors.email}</FormErrorMessage>
                 </FormControl>
                 <FormControl>
                   <FormLabel htmlFor="type">Type of enquiry</FormLabel>
@@ -98,7 +125,7 @@ const LandingSection = () => {
                     <option value="other" style={{backgroundColor:"#512DA8"}}>Other</option>
                   </Select>
                 </FormControl>
-                <FormControl isInvalid={false}>
+                <FormControl isInvalid={formik.touched.comment && !!formik.errors.comment}>
                   <FormLabel htmlFor="comment">Your message</FormLabel>
                   <Textarea
                     id="comment"
@@ -110,11 +137,12 @@ const LandingSection = () => {
                     value={formik.values.comment}
 
                   />
-                  <FormErrorMessage></FormErrorMessage>
+                  <FormErrorMessage>{formik.errors.comment}</FormErrorMessage>
                 </FormControl>
-                <Button type="submit" colorScheme="purple" width="full">
-                  Submit
+                <Button type="submit" colorScheme="purple" width="full" disabled={isLoading}>
+                  {isLoading ? "Processing..." : "Submit"}
                 </Button>
+                
               </VStack>
             </form>
 

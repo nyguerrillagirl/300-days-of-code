@@ -94,7 +94,7 @@ const Header = () => {
         >
           <nav>
             {/* Add social media links based on the `socials` data */}
-            <SocialMediaLinks/>
+            <SocialMediaLinks />
           </nav>
           <nav>
             <HStack spacing={8}>
