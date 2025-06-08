@@ -1,6 +1,7 @@
 import React, { useEffect, useRef } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faEnvelope } from "@fortawesome/free-solid-svg-icons";
+import { faEnvelopeOpen, faObjectGroup } from "@fortawesome/free-solid-svg-icons";
 import {
   faGithub,
   faLinkedin,
@@ -65,9 +66,11 @@ const Header = () => {
     return (
       <HStack spacing={8}>
         <a href="#projects-section" onClick={handleClick("projects")}>
+          <FontAwesomeIcon style={{paddingRight:"10px"}} icon={faObjectGroup} size="lg" />
           Projects
         </a>
         <a href="#contactme-section" onClick={handleClick("contactme")}>
+          <FontAwesomeIcon style={{paddingRight:"10px"}} icon={faEnvelopeOpen} size="lg" />
           Contact me
         </a>
       </HStack>
