@@ -49,14 +49,9 @@ const LandingSection = () => {
       
       submit("/api/contact", values)
         .then(() => {
-          if (response) {
-            console.log("Submission successful:", response.type, response.message);
             onOpen(response.type, response.message);
-          } else {
-            console.error("No response received from submit function");
-            throw new Error("No response from submit function");
-          }
-        })
+          } 
+        )
         .catch((error) => {
           console.error("Submission error:", error);
           onOpen(
@@ -65,8 +60,7 @@ const LandingSection = () => {
           );
 
         });
-      formik.resetForm();
-
+     formik.resetForm(); 
     },
     validationSchema: validationSchema,
   });
